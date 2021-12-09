@@ -1,0 +1,3 @@
+### Reg_Protection
+
+注册表保护，先运行rootkit.reg注册表文件，创建开机自启项Run下的子项rootkit与键rootkit，然后加载运行驱动程序，保护注册表开机自启项Run中的子项rootkit或者键值rootkit，禁止删除、写入、重命名rootkit

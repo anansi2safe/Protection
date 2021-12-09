@@ -1,0 +1,10 @@
+﻿  Building 'RProtect' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping Debug\RProtect.inf
+  Stamping [Version] section with DriverVer=12/07/2021,17.53.7.838
+  RProtect.c
+D:\data\project\Reg_Protection\RProtect\RProtect\RProtect.c(10): warning C4716: “DriverEntry”: 必须返回一个值
+RProtect.obj : error LNK2019: 无法解析的外部符号 _UnloadDriver@4，函数 _DriverEntry@12 中引用了该符号
+WdfDriverEntry.lib(stub.obj) : error LNK2019: 无法解析的外部符号 _DriverEntry@8，函数 _FxDriverEntryWorker@8 中引用了该符号
+    已定义且可能匹配的符号上的提示:
+      _DriverEntry@12
+D:\data\project\Reg_Protection\RProtect\Debug\RProtect.sys : fatal error LNK1120: 2 个无法解析的外部命令

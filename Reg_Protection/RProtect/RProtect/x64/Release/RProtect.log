@@ -1,0 +1,32 @@
+﻿  Building 'RProtect' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Release\RProtect.inf
+  Stamping [Version] section with DriverVer=12/08/2021,14.30.5.964
+  RProtect.c
+D:\data\project\Protection\Reg_Protection\RProtect\RProtect\RProtect.c(42,37): warning C4047: “函数”:“ULONG”与“char [8]”的间接级别不同
+D:\data\project\Protection\Reg_Protection\RProtect\RProtect\RProtect.c(42,30): warning C4024: “ExAllocatePoolWithTag”: 形参和实参 3 的类型不同
+D:\data\project\Protection\Reg_Protection\RProtect\RProtect\RProtect.c(55,40): warning C4047: “函数”:“ULONG”与“char [8]”的间接级别不同
+D:\data\project\Protection\Reg_Protection\RProtect\RProtect\RProtect.c(55,33): warning C4024: “ExFreePoolWithTag”: 形参和实参 2 的类型不同
+D:\data\project\Protection\Reg_Protection\RProtect\RProtect\RProtect.c(89,2): warning C4047: “函数”:“ULONG”与“char [8]”的间接级别不同
+D:\data\project\Protection\Reg_Protection\RProtect\RProtect\RProtect.c(88,3): warning C4024: “ExAllocatePoolWithTag”: 形参和实参 3 的类型不同
+D:\data\project\Protection\Reg_Protection\RProtect\RProtect\RProtect.c(92,41): warning C4305: “类型强制转换”: 从“PVOID”到“REG_NOTIFY_CLASS”截断
+D:\data\project\Protection\Reg_Protection\RProtect\RProtect\RProtect.c(150,43): warning C4047: “函数”:“ULONG”与“char [8]”的间接级别不同
+D:\data\project\Protection\Reg_Protection\RProtect\RProtect\RProtect.c(150,36): warning C4024: “ExFreePoolWithTag”: 形参和实参 2 的类型不同
+  RProtect.vcxproj -> D:\data\project\Protection\Reg_Protection\RProtect\x64\Release\RProtect.sys
+  Done Adding Additional Store
+  Successfully signed: D:\data\project\Protection\Reg_Protection\RProtect\x64\Release\RProtect.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  D:\data\project\Protection\Reg_Protection\RProtect\x64\Release\RProtect\rprotect.cat
+  Done Adding Additional Store
+  Successfully signed: D:\data\project\Protection\Reg_Protection\RProtect\x64\Release\RProtect\rprotect.cat
+  

@@ -1,0 +1,11 @@
+﻿  Building 'PProtect' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  PProtect.c
+D:\data\project\Process-protection\KMDF\PProtect.c(7,23): warning C4100: “pRegistryString”: 未引用的形参
+D:\data\project\Process-protection\KMDF\PProtect.c(22,11): warning C4189: “status”: 局部变量已初始化但不引用
+  KMDF.vcxproj -> D:\data\project\Process-protection\Release\PProtect.sys
+  Done Adding Additional Store
+  Successfully signed: D:\data\project\Process-protection\Release\PProtect.sys
+  
+  Driver is 'Universal'.
+  Inf2Cat task was skipped as there were no inf files to process
+  

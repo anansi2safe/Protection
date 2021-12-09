@@ -1,0 +1,90 @@
+;
+; RProtect.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=RProtect.cat
+DriverVer = 12/07/2021,17.53.7.838
+PnpLockDown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+RProtect_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+RProtect.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTx86
+
+[Standard.NTx86]
+%RProtect.DeviceDesc%=RProtect_Device, Root\RProtect ; TODO: edit hw-id
+
+[RProtect_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+RProtect.sys
+
+;-------------- Service installation
+[RProtect_Device.NT.Services]
+AddService = RProtect,%SPSVCINST_ASSOCSERVICE%, RProtect_Service_Inst
+
+; -------------- RProtect driver install sections
+[RProtect_Service_Inst]
+DisplayName    = %RProtect.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\RProtect.sys
+
+;
+;--- RProtect_Device Coinstaller installation ------
+;
+
+[RProtect_Device.NT.CoInstallers]
+AddReg=RProtect_Device_CoInstaller_AddReg
+CopyFiles=RProtect_Device_CoInstaller_CopyFiles
+
+[RProtect_Device_CoInstaller_AddReg]
+;
+
+
+[RProtect_Device_CoInstaller_CopyFiles]
+;
+
+
+[RProtect_Device.NT.Wdf]
+KmdfService =  RProtect, RProtect_wdfsect
+[RProtect_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "RProtect Installation Disk"
+RProtect.DeviceDesc = "RProtect Device"
+RProtect.SVCDESC = "RProtect Service"

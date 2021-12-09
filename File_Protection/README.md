@@ -1,0 +1,2 @@
+# File_Protection
+文件保护驱动，保护名为1122334.txt的文件不可删除与写入，驱动启动前使用FProtect.inf进行安装，不要使用instDrv的安装

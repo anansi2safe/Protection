@@ -1,0 +1,16 @@
+﻿  Building 'FProtect' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  FProtect.c
+D:\data\project\File_Protection\CKProtect\FProtect.c(23,1): warning C4047: “初始化”:“PFLT_FILTER_UNLOAD_CALLBACK”与“PFLT_FILTER_UNLOAD_CALLBACK (__cdecl *)(FLT_FILTER_UNLOAD_FLAGS)”的间接级别不同
+D:\data\project\File_Protection\CKProtect\FProtect.c(53,23): warning C4047: “return”:“PFLT_FILTER_UNLOAD_CALLBACK”与“long”的间接级别不同
+D:\data\project\File_Protection\CKProtect\FProtect.c(58,29): warning C4100: “FltObjects”: 未引用的形参
+D:\data\project\File_Protection\CKProtect\FProtect.c(117,32): warning C4100: “Flags”: 未引用的形参
+D:\data\project\File_Protection\CKProtect\FProtect.c(116,13): warning C4100: “CompletionContext”: 未引用的形参
+D:\data\project\File_Protection\CKProtect\FProtect.c(115,29): warning C4100: “FltObjects”: 未引用的形参
+D:\data\project\File_Protection\CKProtect\FProtect.c(114,29): warning C4100: “Data”: 未引用的形参
+  CKProtect.vcxproj -> D:\data\project\File_Protection\x64\Release\FProtect.sys
+  Done Adding Additional Store
+  Successfully signed: D:\data\project\File_Protection\x64\Release\FProtect.sys
+  
+  Driver is 'Universal'.
+  Inf2Cat task was skipped as there were no inf files to process
+  
